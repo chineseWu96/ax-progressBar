@@ -3,7 +3,7 @@ const slog = require('single-line-log').stdout;
 const chalk = require('chalk')
 
 // 封装的 ProgressBar 工具
-function ProgressBar(description, bar_length) {
+function progressBar(description, bar_length) {
     // 两个基本参数(属性)
     this.description = description || 'Progress';       // 命令行开头的文字信息
     this.length = bar_length || 100;                     // 进度条的长度(单位：字符)，默认设为 25
@@ -34,4 +34,4 @@ function ProgressBar(description, bar_length) {
 }
 
 // 模块导出
-module.exports = ProgressBar;
+module.exports = progressBar;
